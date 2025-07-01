@@ -1,16 +1,36 @@
-// script.js: This file adds interactivity to the website
+/* style.css: This file controls the visual appearance of the website */
 
-// Wait until the entire page is loaded
-window.onload = function() {
-    // Get the button element using its ID
-    const button = document.getElementById('clickButton');
+/* Applies to the whole page */
+body {
+    background-color: #ffffff; /* White background */
+    color: #000000;           /* Black text */
+    font-family: Arial, sans-serif; /* Clean, readable font */
+    text-align: center;       /* Center text horizontally */
+    margin-top: 100px;        /* Push content down from the top */
+}
 
-    // Get the paragraph element where the message will be displayed
-    const message = document.getElementById('message');
+/* Style the heading */
+h1 {
+    font-size: 2em;
+}
 
-    // Add a click event to the button
-    button.addEventListener('click', function() {
-        // When the button is clicked, show a message
-        message.textContent = 'You clicked the button!';
-    });
-};
+/* Style the button */
+button {
+    background-color: #000000; /* Black background */
+    color: #ffffff;            /* White text */
+    border: none;              /* Remove border */
+    padding: 10px 20px;        /* Add space inside button */
+    font-size: 1em;            /* Set font size */
+    cursor: pointer;           /* Cursor changes to pointer on hover */
+}
+
+/* Change button appearance when hovered over */
+button:hover {
+    background-color: #333333; /* Darker shade of black */
+}
+
+/* Style the paragraph message */
+#message {
+    margin-top: 20px;      /* Space above the message */
+    font-weight: bold;     /* Bold text */
+}
